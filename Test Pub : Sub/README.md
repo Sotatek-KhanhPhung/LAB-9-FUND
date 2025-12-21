@@ -12,11 +12,11 @@ QUEUE = "q.repl_test"
 SEND_INTERVAL_SEC = 1.0
 ```
 
-**VIP_HOST:** địa chỉ VIP của Keepalived
-**VIP_PORT:** Port để truy cập vào Queue
-**VHOST, USER, PASS:** thông tin user RabbitMQ
-**QUEUE:** queue sẽ send message đến
-**SEND_INTERVAL_SEC:** khoảng thời gian giữa các lần gửi
+- **VIP_HOST:** địa chỉ VIP của Keepalived
+- **VIP_PORT:** Port để truy cập vào Queue
+- **VHOST, USER, PASS:** thông tin user RabbitMQ
+- **QUEUE:** queue sẽ send message đến
+- **SEND_INTERVAL_SEC:** khoảng thời gian giữa các lần gửi
 
 ```sh
 def connect():
@@ -35,6 +35,9 @@ def connect():
     )
 ```
 
-**heartbeat:** phát hiện kết nối TCP bị đứt. Nếu trong 30 giây vẫn có publish, consume, ack, không cần gửi heartbeat. Nếu trong 30 giây không có gì sẽ gửi heartbeat, client và broker mỗi bên sẽ gửi một heartbeat frame
-**blocked_connection_timeout:** thời gian tối đa client chịu connection bị broker block. Nếu sau thời gian này, connection bị đóng và sẽ reconnect
-**connection_attempts, retry_delay:** kiểm soát reconnect
+- **heartbeat:** phát hiện kết nối TCP bị đứt. Nếu trong 30 giây vẫn có publish, consume, ack, không cần gửi heartbeat. Nếu trong 30 giây không có gì sẽ gửi heartbeat, client và broker mỗi bên sẽ gửi một heartbeat frame
+- **blocked_connection_timeout:** thời gian tối đa client chịu connection bị broker block. Nếu sau thời gian này, connection bị đóng và sẽ reconnect
+- **connection_attempts, retry_delay:** kiểm soát reconnect
+
+# Result
+<img src="https://drive.google.com/file/d/1QsT7elvjUqiaswPJ5W0XagoYC81ZZRD_/view?usp=drive_link">
