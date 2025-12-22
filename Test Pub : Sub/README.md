@@ -40,4 +40,4 @@ def connect():
 - **connection_attempts, retry_delay:** kiểm soát reconnect
 
 # Result
-<img src="https://drive.google.com/file/d/1QsT7elvjUqiaswPJ5W0XagoYC81ZZRD_/view?usp=sharing">
+<img width="1512" height="947" alt="Image" src="https://github.com/user-attachments/assets/95b13f91-bc25-4e69-bdae-6b9b42fc169d" />
